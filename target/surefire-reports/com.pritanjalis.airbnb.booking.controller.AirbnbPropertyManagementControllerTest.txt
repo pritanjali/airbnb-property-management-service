@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.pritanjalis.airbnb.booking.controller.AirbnbPropertyManagementControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 8.585 s <<< FAILURE! - in com.pritanjalis.airbnb.booking.controller.AirbnbPropertyManagementControllerTest
+testGetAirbnbPropertyWithPropertyId  Time elapsed: 0.119 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <404>
+	at com.pritanjalis.airbnb.booking.controller.AirbnbPropertyManagementControllerTest.testGetAirbnbPropertyWithPropertyId(AirbnbPropertyManagementControllerTest.java:58)
+
+testGetAllAirbnbProperty  Time elapsed: 0.023 s  <<< ERROR!
+org.json.JSONException: Unparsable JSON string: 
+	at com.pritanjalis.airbnb.booking.controller.AirbnbPropertyManagementControllerTest.testGetAllAirbnbProperty(AirbnbPropertyManagementControllerTest.java:74)
+
+testGetAirbnbPropertyWithId  Time elapsed: 0.009 s  <<< ERROR!
+org.json.JSONException: Unparsable JSON string: 
+	at com.pritanjalis.airbnb.booking.controller.AirbnbPropertyManagementControllerTest.testGetAirbnbPropertyWithId(AirbnbPropertyManagementControllerTest.java:45)
+
