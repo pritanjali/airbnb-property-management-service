@@ -3,9 +3,9 @@ package com.pritanjalis.airbnb.repository;
 import java.util.List;
 import java.util.Optional;
 
+import com.pritanjalis.airbnb.domain.AirbnbProperty;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.pritanjalis.airbnb.domain.airbnb.*;
 
 /**
  * Repository class for {@link AirbnbProperty} extends

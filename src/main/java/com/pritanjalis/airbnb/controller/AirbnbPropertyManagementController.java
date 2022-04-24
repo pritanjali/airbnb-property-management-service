@@ -3,16 +3,15 @@ package com.pritanjalis.airbnb.controller;
 import java.net.URI;
 import java.util.*;
 
+import com.pritanjalis.airbnb.domain.AirbnbProperty;
+import com.pritanjalis.airbnb.domain.EntityExistsException;
+import com.pritanjalis.airbnb.domain.EntityNotFoundException;
 import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.http.*;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
-import com.pritanjalis.airbnb.domain.airbnb.*;
-import com.pritanjalis.airbnb.domain.exceptions.*;
 import com.pritanjalis.airbnb.exception.InvalidAirbnbPropertyTypeException;
 import com.pritanjalis.airbnb.service.AirbnbPropertyManagementService;
 
@@ -65,7 +64,7 @@ public class AirbnbPropertyManagementController {
 	}
 
 	/**
-	 * Find AirbnbProperty by {@link AirbnbPropertyType} type.
+	 * Find AirbnbProperty by {@link com.pritanjalis.airbnb.domain.AirbnbPropertyType} type.
 	 */
 	@GetMapping("/airbnb/propertytype/{airbnbPropertyType}")
 	public List<AirbnbProperty> getAirbnbPropertyByAirbnbPropertyType(@PathVariable String airbnbPropertyType) {

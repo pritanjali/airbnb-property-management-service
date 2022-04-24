@@ -6,6 +6,8 @@ import static org.mockito.Mockito.when;
 
 import java.util.*;
 
+import com.pritanjalis.airbnb.domain.AirbnbProperty;
+import com.pritanjalis.airbnb.domain.AirbnbPropertyType;
 import org.junit.jupiter.api.*;
 import org.skyscreamer.jsonassert.JSONAssert;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +18,6 @@ import org.springframework.http.*;
 import org.springframework.test.web.servlet.*;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import com.pritanjalis.airbnb.domain.airbnb.AirbnbProperty;
-import com.pritanjalis.airbnb.domain.airbnb.AirbnbPropertyType;
 import com.pritanjalis.airbnb.service.AirbnbPropertyManagementService;
 
 @SpringBootTest

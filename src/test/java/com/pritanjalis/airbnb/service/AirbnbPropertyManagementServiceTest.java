@@ -10,13 +10,13 @@ import static org.mockito.Mockito.*;
 
 import java.util.*;
 
+import com.pritanjalis.airbnb.domain.AirbnbProperty;
+import com.pritanjalis.airbnb.domain.AirbnbPropertyType;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-
-import com.pritanjalis.airbnb.domain.airbnb.*;
 import com.pritanjalis.airbnb.repository.AirbnbPropertyRepository;
 import com.pritanjalis.airbnb.service.AirbnbPropertyManagementService;
 

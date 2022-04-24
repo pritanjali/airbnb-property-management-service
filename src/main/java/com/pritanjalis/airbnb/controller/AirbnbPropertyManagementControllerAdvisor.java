@@ -4,13 +4,15 @@ import java.time.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import com.pritanjalis.airbnb.domain.EntityExistsException;
+import com.pritanjalis.airbnb.domain.EntityNotFoundException;
+import com.pritanjalis.airbnb.domain.NoEntityDataFoundException;
 import org.springframework.http.*;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.pritanjalis.airbnb.domain.exceptions.*;
 import com.pritanjalis.airbnb.exception.InvalidAirbnbPropertyTypeException;
 
 @ControllerAdvice
@@ -28,7 +30,7 @@ public class AirbnbPropertyManagementControllerAdvisor extends ResponseEntityExc
 	}
 
 	@ExceptionHandler(EntityExistsException.class)
-	public ResponseEntity<Object> handleAirbnbPropertyExistsScenario(final EntityExistsException exception,
+	public ResponseEntity<Object> handleAirbnbPropertyExistsScenario(final EntityNotFoundException exception,
 			final WebRequest request) {
 
 		Map<String, Object> body = new LinkedHashMap<>();

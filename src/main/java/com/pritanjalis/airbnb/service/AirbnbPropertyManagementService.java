@@ -3,11 +3,11 @@ package com.pritanjalis.airbnb.service;
 import java.util.List;
 import java.util.Optional;
 
+import com.pritanjalis.airbnb.domain.AirbnbProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
-import com.pritanjalis.airbnb.domain.airbnb.*;
 import com.pritanjalis.airbnb.repository.AirbnbPropertyRepository;
 
 @Service
@@ -40,12 +40,7 @@ public class AirbnbPropertyManagementService {
 	public Optional<AirbnbProperty> getAirbnbPropertyById(final Long propertyId) {
 		return airbnbPropertyRepository.findById(propertyId);
 	}
-	
-	/*
-	 * public List<AirbnbProperty> getAllAirbnbPropertyByAirbnbPropertyType(final
-	 * AirbnbPropertyType propertyType) { return
-	 * airbnbPropertyRepository.findByPropertyType(propertyType); }
-	 */
+
 	
 	public Page<AirbnbProperty> findAllPage(Pageable pageable) {
 		return airbnbPropertyRepository.findAll(pageable);
