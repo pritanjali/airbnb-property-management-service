@@ -39,11 +39,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- Dependency for register service in Eureka -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
 		<!-- Dependency for Swagger documentation -->
 		<dependency>
 			<groupId>io.springfox</groupId>
