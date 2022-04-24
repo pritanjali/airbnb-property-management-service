@@ -18,7 +18,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import com.pritanjalis.airbnb.repository.AirbnbPropertyRepository;
-import com.pritanjalis.airbnb.service.AirbnbPropertyManagementService;
 
 @ExtendWith(SpringExtension.class)
 public class AirbnbPropertyManagementServiceTest {
