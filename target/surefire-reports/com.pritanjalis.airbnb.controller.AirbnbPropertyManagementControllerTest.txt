@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.pritanjalis.airbnb.controller.AirbnbPropertyManagementControllerTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.278 s - in com.pritanjalis.airbnb.controller.AirbnbPropertyManagementControllerTest
