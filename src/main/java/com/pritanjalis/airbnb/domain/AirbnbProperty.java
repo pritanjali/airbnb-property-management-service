@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 @Entity
 @ApiModel(description = "Details of Airbnb entity")
-@Table(name = "AIRBNB_PROPERTY", uniqueConstraints = @UniqueConstraint(columnNames = {"PROPERTY_ID"}))
+@Table(name = "AIRBNB_PROPERTY")
 public class AirbnbProperty implements Serializable {
 
 	private static final long serialVersionUID = 1L;
